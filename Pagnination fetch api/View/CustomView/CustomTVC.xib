@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Ubuntu-Bold.ttf">
+            <string>Ubuntu-Bold</string>
+        </array>
+        <array key="Ubuntu-Regular.ttf">
+            <string>Ubuntu-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomTVC" rowHeight="170" id="KGk-i7-Jjw" customClass="CustomTVC" customModule="Pagnination_fetch_api" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="420" height="170"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="420" height="170"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ufc-Vv-wBn">
+                        <rect key="frame" x="251" y="21" width="149" height="125"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="128" id="9Z5-tZ-Sz2"/>
+                            <constraint firstAttribute="width" constant="149" id="Y0o-xC-BjM"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="h8x-4p-oPl" userLabel="Name :">
+                        <rect key="frame" x="20" y="32" width="62" height="39"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="62" id="0dS-Xs-pBz"/>
+                            <constraint firstAttribute="height" constant="39" id="vXd-pl-JDZ"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="19"/>
+                        </variation>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hyg-j6-dlb">
+                        <rect key="frame" x="20" y="93" width="157" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="50" id="NK4-xT-gI0"/>
+                            <constraint firstAttribute="width" constant="157" id="xvN-4M-UpK"/>
+                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="118" id="zDl-yu-88a"/>
+                        </constraints>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="tinted" title="Download">
+                            <backgroundConfiguration key="background" strokeWidth="2">
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="strokeColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </backgroundConfiguration>
+                            <fontDescription key="titleFontDescription" name="Ubuntu-Bold" family="Ubuntu" pointSize="20"/>
+                            <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <color key="baseBackgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </buttonConfiguration>
+                        <connections>
+                            <action selector="downloadButtonTap:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="NOc-yA-bLA"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Shivaditya" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="EVm-WR-eZK">
+                        <rect key="frame" x="90" y="39" width="142" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="nb3-hA-CIm"/>
+                            <constraint firstAttribute="width" constant="142" id="xG9-wx-U9H"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                        <variation key="heightClass=regular-widthClass=regular">
+                            <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="17"/>
+                        </variation>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="ufc-Vv-wBn" secondAttribute="trailing" constant="20" symbolic="YES" id="0u5-8W-gVa"/>
+                    <constraint firstItem="ufc-Vv-wBn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" symbolic="YES" id="2OL-c9-6vc"/>
+                    <constraint firstItem="h8x-4p-oPl" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="9Xc-Lu-nsJ"/>
+                    <constraint firstItem="EVm-WR-eZK" firstAttribute="leading" secondItem="h8x-4p-oPl" secondAttribute="trailing" constant="8" symbolic="YES" id="PKe-BK-g3D"/>
+                    <constraint firstItem="ufc-Vv-wBn" firstAttribute="leading" secondItem="EVm-WR-eZK" secondAttribute="trailing" constant="19" id="TFM-uG-o5s"/>
+                    <constraint firstItem="Hyg-j6-dlb" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" symbolic="YES" id="m1E-Dd-YkF"/>
+                    <constraint firstItem="h8x-4p-oPl" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="32" id="qTD-7r-oAH"/>
+                    <constraint firstAttribute="bottom" secondItem="Hyg-j6-dlb" secondAttribute="bottom" constant="27" id="sOG-io-diE"/>
+                    <constraint firstItem="Hyg-j6-dlb" firstAttribute="top" secondItem="h8x-4p-oPl" secondAttribute="bottom" constant="22" id="uQa-W7-jRh"/>
+                    <constraint firstItem="ufc-Vv-wBn" firstAttribute="leading" secondItem="Hyg-j6-dlb" secondAttribute="trailing" constant="74" id="uf8-XF-Kod"/>
+                    <constraint firstItem="EVm-WR-eZK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="39" id="vDY-iI-fiG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imageViewForCell" destination="ufc-Vv-wBn" id="0Hs-cg-g94"/>
+                <outlet property="titleLabel" destination="EVm-WR-eZK" id="F2v-bA-ysr"/>
+            </connections>
+            <point key="canvasLocation" x="295.6521739130435" y="0.0"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="photo" catalog="system" width="128" height="93"/>
+    </resources>
+</document>
